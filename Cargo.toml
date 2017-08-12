@@ -1,0 +1,9 @@
+[package]
+name = "proxy"
+version = "0.1.0"
+authors = ["Mahmoud Al-Qudsi <mqudsi@neosmart.net>"]
+
+[dependencies]
+getopts = "0.2"
+tcpproxy = "0.1"
+udpproxy = "0.1"
