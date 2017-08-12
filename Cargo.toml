@@ -1,9 +1,14 @@
 [package]
-name = "proxy"
+name = "rsproxy"
 version = "0.1.0"
 authors = ["Mahmoud Al-Qudsi <mqudsi@neosmart.net>"]
+description = "Cross-platform, multi-client TCP/UDP proxy"
+homepage = "https://github.com/neosmart/proxy"
+repository = "https://github.com/neosmart/proxy"
+readme = "README.md"
+keywords = ["proxy", "udp", "tcp", "networking"]
+categories = ["command-line-utilities", "network-programming"]
+license = "MIT"
 
 [dependencies]
 getopts = "0.2"
-tcpproxy = "0.1"
-udpproxy = "0.1"
