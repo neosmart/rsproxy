@@ -111,7 +111,7 @@ fn cargo_install(package: &str) -> std::io::Result<()> {
 fn is_executable(name: &str) -> Option<PathBuf> {
     let env_path = env::var("PATH").expect("Could not query $PATHS");
     let mut paths: Vec<PathBuf> =
-        env_path.split(|c| [';', ':'].into_iter().find(|x| **x == c).is_some())
+        env_path.split(|c| [';', ':'].iter().find(|x| **x == c).is_some())
             .map(|p| PathBuf::from(p))
             .collect();
     paths.push(env::current_dir().unwrap());
